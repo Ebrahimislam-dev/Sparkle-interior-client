@@ -1,0 +1,74 @@
+.newprobg{
+    width: 100%;
+    height: 100%px;
+    background-image: url("https://i.ibb.co/xj6c0gz/banner01.jpg");
+    background-repeat: no-repeat;
+     /* background-position: 0px 250px; */
+     background-position: center; 
+    background-size:cover ;
+}
+
+
+
+.image {
+    position: relative;
+    /* width: 400px; */
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.60s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #ffffff;
+}
+
+.image__overlay > * {
+    transform: translateY(0px);
+    transition: transform 0.60s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+
+
+.image__description >* {
+    transform: translateX(5px);
+    transition: transform 1.80s;
+ 
+}
+.image__description:hover {
+    opacity: 1;
+ 
+}
+.image__description:hover > * {
+    transform: translateX(5px);
+}

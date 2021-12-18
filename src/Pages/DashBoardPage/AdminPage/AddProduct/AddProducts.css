@@ -1,0 +1,33 @@
+ .add-products form{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.add-products form input,textarea{
+    width: 75%;
+    margin-bottom: 30px;
+    
+}
+.add-products .submit{
+    width: 40%;
+    margin-bottom: 30px;
+    
+} 
+
+
+@media only screen and (max-width:680px){
+ 
+.add-products  form{
+  width: 400px;
+  height: 480px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+}
