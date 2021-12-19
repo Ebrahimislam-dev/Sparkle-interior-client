@@ -12,13 +12,13 @@ const ExploreAllProduct = () => {
     const [products, isLoading] = useProducthook(false);
 
     return (
-        <div className=' bg-black'>
+        <div className=' bg-gray-50'>
             <Header></Header>
             <div className="flex justify-center pt-36 mb-8 uppercase ">
 
                 <span class=" line"></span>
-                <h1 className="heading pt-5 pb-10 text-white animate-pulse">
-                    Our <span className="text-danger"> Bike's </span>
+                <h1 className="heading pt-5 pb-10 font-mono animate-pulse">
+                    Our <span className=""> Products </span>
                 </h1>
 
 
@@ -42,7 +42,7 @@ const ExploreAllProduct = () => {
                 ) : (
                     <div className="container-fluid  mb-1">
 
-                        <Row xs={1} md={3} className="px-10">
+                        <Row xs={1} md={4} className="">
                             {
                                 products?.map(product => <ProductCard
                                     key={product._id}

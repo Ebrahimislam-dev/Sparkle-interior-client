@@ -16,7 +16,7 @@ const Myorder = () => {
     // loading data from database 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`https://salty-river-79195.herokuapp.com/myorder/${user?.email}`)
+        fetch(`https://calm-plains-23612.herokuapp.com/myorder/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setMyOrders(data);
@@ -30,7 +30,7 @@ const Myorder = () => {
 
     // Delete Api
     const handleDelete = id => {
-        const url = `https://salty-river-79195.herokuapp.com/allorder/${id}`;
+        const url = `https://calm-plains-23612.herokuapp.com/allorder/${id}`;
         fetch(url, {
             method: "DELETE"
         })
@@ -77,16 +77,16 @@ const Myorder = () => {
                                                         <div className="md:mx-0 mx-auto">
                                                             <img src={img} alt="" className=" md:w-24 md:h-24 md:mr-10 w-40" />
                                                         </div>
-                                                        <div className="mt-3 mx-mt-0 md:ml-8 text-gray-200">
+                                                        <div className="mt-3 mx-mt-0 md:ml-8 text-left text-gray-200">
                                                             <h1 className="text-xl font-mono font-bold">{serviceName} </h1>
-                                                            <p className="text-yellow-600 font-bold mb-2">price: {price}</p>
+                                                            <p className="text-gray-200 font-bold mb-2">price: {price}</p>
                                                             <p className="font-bold mb-1">Order-Status:<span className="font-normal font-mono"> {status}</span></p>
 
                                                         </div>
 
                                                     </div>
                                                     <div className="flex items-center mt-3 md:mt-0">
-                                                        
+
                                                         <button onClick={() => handleDelete(_id)}><MdDelete className=" text-3xl text-red-500" /></button>
                                                     </div>
                                                 </div>

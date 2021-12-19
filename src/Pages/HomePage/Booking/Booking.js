@@ -34,7 +34,7 @@ const Booking = () => {
 
     // useEffect(() => {
     //     setIsLoading(true);
-    //     fetch('https://salty-river-79195.herokuapp.com/products')
+    //     fetch('https://calm-plains-23612.herokuapp.com/products')
     //         .then(res => res.json())
     //         .then(data => {
     //             // console.log(data);
@@ -53,7 +53,7 @@ const Booking = () => {
 
     const onSubmit = (data) => {
         data.email = user?.email;
-        axios.post('https://salty-river-79195.herokuapp.com/order', data)
+        axios.post('https://calm-plains-23612.herokuapp.com/order', data)
             .then(res => {
                 if (res.data.insertedId) {
 
@@ -65,8 +65,8 @@ const Booking = () => {
     };
     return (
 
-        <div className="bg-black">
-            <h1 className="heading mb-5 mt-1 text-white"> Book
+        <div className="newprobg">
+            <h1 className="heading mb-5 pt-10 "> Book
                 <span className="text-danger"> {singleService[0]?.name} </span> Cycle
             </h1>
             {
@@ -84,10 +84,12 @@ const Booking = () => {
 
 
                 ) : (
-                    <div className="container-fluid mb-1">
+                    <div className="container-fluid mb-1 ">
                         <div className="row ">
                             {/* singl service details */}
-                            <div className="col-md-5 ">
+                            <div className="col-md-5 " data-aos="fade-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000">
                                 <Row xs={1} md={1} className="g-3 ">
                                     <div className="container-fluid">
 
@@ -104,12 +106,14 @@ const Booking = () => {
                             </div>
 
                             {/* Booking Form  */}
-                            <div className="col-md-7">
+                            <div className="col-md-7 " data-aos="fade-left"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000">
                                 <div className=" order-services  m-auto">
                                     <div className=" border d-flex justify-content-center align-items-center">
                                         <div>
-                                            <h1 className="text-2xl text-white mt-12 font-serif">Please Fill The Order Form</h1>
-                                            <form onSubmit={handleSubmit(onSubmit)}>
+                                            <h1 className="text-2xl  mt-12 font-serif">Please Fill The Order Form</h1>
+                                            <form onSubmit={handleSubmit(onSubmit)} className=' shadow-lg' >
                                                 {singleService[0] && <input
                                                     {...register("serviceName", { required: true })}
                                                     placeholder="Service Name"
@@ -195,11 +199,13 @@ const Booking = () => {
 
             }
             <Link to="/home">
-                <button className="md:w-2/12 py-2 md:px-0 px-8 md:mt-0  mt-4 rounded-xl bg-yellow-500 text-black font-bold text-xs md:text-xl mb-3">Backto Home</button>
+                <button className="md:w-2/12 py-2 md:px-0 px-8 md:mt-0  mt-4 rounded-xl bg-yellow-500 text-black font-bold text-xs md:text-xl mb-3">Back to Home</button>
+
             </Link>
             <br />
             <Link to="/exploreProducts">
                 <button className="md:w-2/12 py-2 md:px-0 px-8 md:mt-0  mt-2 rounded-xl bg-yellow-500 text-black font-bold text-xs md:text-xl mb-3">Book Another Service</button>
+                
             </Link>
         </div>
 

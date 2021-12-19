@@ -91,7 +91,7 @@ const useFirebase = () => {
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
 
-        fetch('https://salty-river-79195.herokuapp.com/users', {
+        fetch('https://calm-plains-23612.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -103,7 +103,7 @@ const useFirebase = () => {
     }
 
     useEffect(() => {
-        fetch(`https://salty-river-79195.herokuapp.com/users/${user.email}`)
+        fetch(`https://calm-plains-23612.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])

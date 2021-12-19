@@ -7,7 +7,7 @@ const useProducthook = (options) => {
     const [isLoading, setIsLoading] = useState(false)
     useEffect(() => {
         setIsLoading(true)
-        axios.get('https://salty-river-79195.herokuapp.com/products')
+        axios.get('https://calm-plains-23612.herokuapp.com/products')
             .then(res => {
                 console.log(res);
                 setProducts(res.data)

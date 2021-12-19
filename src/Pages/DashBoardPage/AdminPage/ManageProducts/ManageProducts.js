@@ -9,7 +9,7 @@ const ManageProducts = () => {
     const [error, setError] = useState('');
 
     useEffect(() => {
-        fetch(`https://salty-river-79195.herokuapp.com/products`)
+        fetch(`https://calm-plains-23612.herokuapp.com/products`)
             .then(res => res.json())
             .then(data => {
                 setProduct(data);
@@ -23,7 +23,7 @@ const ManageProducts = () => {
     // Delete Api
 
     const handleDelete = id => {
-        const url = `https://salty-river-79195.herokuapp.com/products/${id}`;
+        const url = `https://calm-plains-23612.herokuapp.com/products/${id}`;
         fetch(url, {
             method: "DELETE"
         })

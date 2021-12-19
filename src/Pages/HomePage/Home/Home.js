@@ -11,6 +11,7 @@ import Banner3 from '../Banner3/Banner3';
 import Newproduct1 from './../Newproduct1/Newproduct1';
 import News from './../News/News';
 import Banner4 from './../Banner4/Banner4';
+import Reviews from './../Reviews/Reviews';
 
 
 const Home = () => {
@@ -28,10 +29,11 @@ const Home = () => {
             <NewProduct></NewProduct>
             <RoomProduct></RoomProduct>
             <Newproduct1></Newproduct1>
-          
+
             <Banner3></Banner3>
-              <News></News>
-              <Banner4></Banner4>
+            <News></News>
+            <Banner4></Banner4>
+            <Reviews></Reviews>
 
             {/* 
             <Works></Works>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.css'
 import Typewriter from 'typewriter-effect'
+import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <div className="banner overflow-hidden">
@@ -29,7 +30,9 @@ const Banner = () => {
                         </h1>
 
                         <h4 className="text-white md:text-xl  mt-8 font-sans font-bold "><br /></h4>
-                        <button class="custom-btn btn-12"><span>Click!</span><span>Explore</span></button>
+                        <Link to="/exploreProducts">
+                            <button class="custom-btn btn-12"><span>Click!</span><span>Explore</span></button>
+                        </Link>
 
                     </div>
                 </div>

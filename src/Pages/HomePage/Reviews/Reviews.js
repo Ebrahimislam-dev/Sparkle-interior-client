@@ -13,7 +13,7 @@ const Reviews = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         pauseOnHover: true,
         responsive: [
 
@@ -37,7 +37,7 @@ const Reviews = () => {
     };
     useEffect(() => {
         
-        axios.get('https://salty-river-79195.herokuapp.com/reviews')
+        axios.get('https://calm-plains-23612.herokuapp.com/reviews')
             .then(res => {
                 console.log(res);
                 setReviews(res.data)
@@ -48,11 +48,13 @@ const Reviews = () => {
 
 
     return (
-        <div className=" md:pb-40 pb-10 md:px-24 bg-black text-white">
+        <div className=" md:pb-40 pb-10 md:px-24 bg-gray-100 text-black overflow-hidden">
             <div>
-                <section className=" flex flex-col justify-center items-center md:pt-24 pt-8 md:mx-0 mx-4 md:mb-10 ">
-                    <p className="text-yellow-400 text-md font-bold uppercase mb-2 ">TESTIMONIAL</p>
-                    <h1 className=" text-xl md:text-3xl font-serif mb-12 text-gray-200">WHAT OUR CUSTOMERS SAY</h1>
+                <section className=" flex flex-col justify-center items-center md:pt-24 pt-8 md:mx-0 mx-4 md:mb-10 "  data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">
+                    <p className="text-md font-bold text-xl md:text-3xl font-mono uppercase mb-2 ">TESTIMONIAL</p>
+                    <h1 className=" text-lg  font-mono mb-12 text-gray-400">WHAT OUR HAPPY CUSTOMERS SAY</h1>
                 </section>
                 <Slider {...settings} className=" z-0 ">
 

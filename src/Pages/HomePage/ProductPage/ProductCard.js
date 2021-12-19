@@ -12,19 +12,19 @@ const ProductCard = ({ product }) => {
     return (
         <div className="container-fluid">
             {/* products card dynamically */}
-            <div className="text-start container " >
+            <div className="text-start font-mono " >
                 <Col>
-                    <Card className=" hvr-float-shadow hvr-grow-shadow productCard bg-black text-white mb-5 px-4 h-100 ">
-                        <Card.Img variant="top cardsimg" className=" px-8 py-1" src={img} />
+                    <Card className=" hvr-float-shadow hvr-grow-shadow productCard  mb-5 px-2 h-full ">
+                        <Card.Img variant="top cardsimg" className=" h-72 py-1" src={img} />
                         <Card.Body className="" >
                             <Card.Title className="text-center fw-bold">{name}</Card.Title>
                             <Card.Text>
                                 <h5>
-                                    About product: <small className="pb-3 fs-6 text-start text-gray-400"> {description}</small>
+                                    Product Description: <small className="pb-3 fs-6 text-start text-gray-400"> {description}</small>
                                 </h5>
                                 <br />
 
-                                <h2>
+                                <h2 className='text-xl font-bold '>
                                     Price: $ {price}
                                 </h2>
                                 <h1 className="md:text-right mr-3">
@@ -40,7 +40,7 @@ const ProductCard = ({ product }) => {
                         </Card.Body>
                         <Card.Footer className="text-center" >
                             <Link to={`/booking/${_id}`}>
-                                <button className="btn btn-outline-danger px-5 border-2 rounded-4 fw-bold fst-italic">Buy Now</button>
+                                <button class="custom-btn btn-7"><span>Order Now</span></button>
                             </Link>
                         </Card.Footer>
                     </Card>

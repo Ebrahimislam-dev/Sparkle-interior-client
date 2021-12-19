@@ -13,13 +13,13 @@
        
 }
 .cardsimg{
-    height: 200px;
+    height: 300px;
 }
 .productCard{
-  border: 1px solid rgba(255, 0, 0, 0.384);
+  border: 1px solid rgba(128, 128, 128, 0.199);
 }
 .productCard:hover{
-  border: 1px solid red;
+  border: 1px solid rgb(180, 180, 180);
   
 }
 /*************************************/

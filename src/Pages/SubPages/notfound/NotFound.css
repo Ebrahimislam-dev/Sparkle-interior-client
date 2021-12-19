@@ -1,8 +1,7 @@
 .error{
-    width:100%;
-    height: 80vh; 
+    
   
-    background-image: linear-gradient(180deg, #0000006E 60%, #020202 100%),url(https://i.ibb.co/P9tPYpN/error.png);
+    background-image:linear-gradient(to top, #000046, #1cb5e0),url("");
     background-repeat: no-repeat;
     background-position:center; 
     background-size:contain ;

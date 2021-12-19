@@ -13,7 +13,7 @@ const ManageOrders = () => {
         getData()
     }, [])
     const getData = () => {
-        axios.get(' https://salty-river-79195.herokuapp.com/allorder')
+        axios.get(' https://calm-plains-23612.herokuapp.com/allorder')
             .then((res) => {
                 setOrders(res.data)
                 setIsLoading(false)
@@ -22,7 +22,7 @@ const ManageOrders = () => {
 
     const handleDeleteOrder = (id) => {
         setIsLoading(true)
-        axios.delete(` https://salty-river-79195.herokuapp.com/allorder/${id}`)
+        axios.delete(` https://calm-plains-23612.herokuapp.com/allorder/${id}`)
             .then(res => {
                 setIsLoading(false)
                 if (res.data.deletedCount) {
@@ -36,7 +36,7 @@ const ManageOrders = () => {
 
     const handleApproval = (id) => {
         setIsLoading(true)
-        axios.put(` https://salty-river-79195.herokuapp.com/allorder/${id}`, { status: "Shipped" })
+        axios.put(` https://calm-plains-23612.herokuapp.com/allorder/${id}`, { status: "Shipped" })
             .then((res) => {
                 setIsLoading(false)
                 getData()
@@ -70,15 +70,15 @@ const ManageOrders = () => {
                                     orders.map(order => {
                                         const { _id, serviceName, displayName, img, price, email, status } = order
                                         return (
-                                            <div >
+                                            <div className=' overflow-hidden'>
                                                 <div className="  flex flex-col md:flex-row items-center justify-between mb-3 shadow-md border p-3">
                                                     <div className="flex flex-col md:flex-row">
                                                         <div className="md:mx-0 mx-auto">
                                                             <img src={img} alt="" className=" md:w-24 md:h-24 md:mr-10 w-40" />
                                                         </div>
-                                                        <div className="mt-3 mx-mt-0 text-gray-200">
+                                                        <div className="mt-3 mx-mt-0 text-gray-200 text-left ml-10">
                                                             <h1 className="text-xl font-mono font-bold">{serviceName} </h1>
-                                                            <p className="text-yellow-600 font-bold mb-2">{price}</p>
+                                                            <p className=" font-bold mb-2">$ {price}</p>
                                                             <p className="font-bold mb-1">User-Name:<span className="font-normal font-mono"> {displayName}</span></p>
                                                             <p className="font-bold mb-1">User-email:<span className="font-normal font-mono"> {email}</span></p>
                                                         </div>

@@ -1,10 +1,14 @@
 .dashboardbg{
     
-    background-image: linear-gradient( 180deg, #0000008f 60%, #020202 100%),url("https://i.ibb.co/H2HN2mg/bg-3.jpg");
+    background-image: linear-gradient( 180deg, #4d494900 60%, #02020269 100%),url("https://i.ibb.co/xLQx4WF/bg1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover ;
 }
+.dash-bg{
+    background-color: rgba(230, 214, 168, 0.246);
+}
+
 
 @media only screen and (max-width:680px){
     .dashboardbg{

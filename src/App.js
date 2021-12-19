@@ -12,6 +12,9 @@ import Booking from './Pages/HomePage/Booking/Booking';
 import PrivateRoute from './Pages/loginpage/privateRout/PrivateRoute';
 import DashBoard from './Pages/DashBoardPage/DashBoard/DashBoard';
 import ExploreAllProduct from './Pages/HomePage/ProductPage/ExploreAllProduct';
+import Faqs from './Pages/SubPages/FAQS/Faqs';
+import AdminRoute from './Pages/loginpage/AdminRoute/AdminRoute';
+import AddProducts from './Pages/DashBoardPage/AdminPage/AddProduct/AddProducts';
 
 function App() {
   return (
@@ -27,24 +30,22 @@ function App() {
             </Route>
             <Route path="/exploreProducts">
               <ExploreAllProduct />
-            </Route>{/* 
-            {/* <PrivateRoute path="/">
-            <Appointment />
-             </PrivateRoute>
+            </Route> 
+          
           
             <Route path="/faqs">
             <Faqs></Faqs>
           </Route>
           
-          */}  {/*
+        
              <PrivateRoute path="/dashboard">
               <DashBoard />
             </PrivateRoute> 
            <AdminRoute path="/addproduct">
               <AddProducts></AddProducts>
-            </AdminRoute>  */}
+            </AdminRoute>  
 
-            {/* <PrivateRoute path="/booking/:productId">
+            <PrivateRoute path="/booking/:productId">
               <Booking></Booking>
             </PrivateRoute>
             <Route path="/contact">
@@ -62,7 +63,7 @@ function App() {
             </Route>
             <Route path="/*">
               <NotFound></NotFound>
-            </Route> */} 
+            </Route>  
 
           </Switch>
            <Footer></Footer> 
