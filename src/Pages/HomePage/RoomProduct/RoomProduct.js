@@ -3,12 +3,16 @@ import React from 'react';
 const RoomProduct = () => {
     return (
         <div>
-            <div className='grid grid-cols-1 md:grid-cols-2 mt-2 '>
-                <div className=' overflow-hidden'>
+            <div className='grid grid-cols-1 md:grid-cols-2 mt-2 overflow-hidden '>
+                <div className=' overflow-hidden' data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000" >
                     <img className='transition duration-1000 transform hover:scale-105' src="https://i.ibb.co/2FgYY2v/bed1.jpg" alt="" />
                 </div>
-               
-                <div className='grid grid-cols-1'>
+
+                <div className='grid grid-cols-1' data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">
                     <div className='grid grid-cols-1 md:grid-cols-2'>
                         <div className=' overflow-hidden'>
                             <img className='transition duration-1000 transform hover:scale-110' src="https://i.ibb.co/mT63kz6/bedside.jpg" alt="" />

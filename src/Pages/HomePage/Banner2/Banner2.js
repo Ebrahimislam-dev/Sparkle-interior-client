@@ -2,7 +2,7 @@ import React from 'react';
 import './Banner2.css'
 const Banner2 = () => {
     return (
-        <div className='my-2'>
+        <div className='my-2 overflow-hidden'>
             <div className='grid grid-cols-2' data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="1000">

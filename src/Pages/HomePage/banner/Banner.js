@@ -3,7 +3,7 @@ import './Banner.css'
 import Typewriter from 'typewriter-effect'
 const Banner = () => {
     return (
-        <div className="banner">
+        <div className="banner overflow-hidden">
 
             <div className=" md:h-screen h-full md:px-28">
                 <div className="md:grid grid-cols-0 md:grid-cols-2  md:h-screen  px-5  md:break-normal break-all col-span-2">

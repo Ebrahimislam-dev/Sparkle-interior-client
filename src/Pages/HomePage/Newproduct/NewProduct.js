@@ -35,13 +35,17 @@ const NewProduct = () => {
     };
     return (
         <div>
-            <div className='newprobg grid grid-cols-3 w-full h-screen w-screen'>
+            <div className='newprobg grid grid-cols-3  h-screen w-screen overflow-hidden'>
                 <div className=' col-span-2 text-left'>
-                    <h1 className=' md:mt-28 text-4xl font-mono md:ml-28 font-extrabold text-gray-700 '>NEW ARRIVALS</h1>
-                    <p className='mt-2 text-white font-mono md:ml-28 '>
-                        A beautiful bedroom will make a home feel more inviting. We gathered our favorite decoration ideas for your inspiration. Maybe you can build your stylish bedroom space.
-                    </p>
-                    <Slider {...settings} className=' mx-4 my-3  '>
+                    <div data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000">
+                        <h1 className=' md:mt-28 text-4xl font-mono md:ml-16 font-extrabold text-gray-700 '>NEW ARRIVALS</h1>
+                        <p className='mt-2 text-white font-mono md:ml-16 '>
+                            A beautiful bedroom will make a home feel more inviting. We gathered our favorite decoration ideas for your inspiration. Maybe you can build your stylish bedroom space.
+                        </p>
+                    </div>
+                    <Slider {...settings} className=' mx-4 my-3' >
                         <div className=' px-10 py-6  rounded-lg'>
                             <div class="image">
                                 <img class="image__img" src="https://i.ibb.co/7J1ZPyn/prd1.jpg" alt="Prdimage" />

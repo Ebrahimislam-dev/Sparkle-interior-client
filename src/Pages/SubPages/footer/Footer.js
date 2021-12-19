@@ -20,7 +20,7 @@ import Newsletter from '../Newsletter/Newsletter';
 
 const Footer = () => {
     return (
-        <div className=''>
+        <div className=' '>
             <div className="container-fluid footer-bg text-white-50 md:h-screen  md:px-28">
                 {/* <p className="heading-footer footer-menu  fst-italic">
                 " The world is a book and those who do not travel get to read only one page! "
@@ -29,13 +29,13 @@ const Footer = () => {
                 <div className="container-fluid">
                     <Newsletter></Newsletter>
 
-                    <div className=" row ">
+                    <div className=" row md:pb-12 ">
 
                         {/* Router/Nav column */}
-                        <div className="col-md-4 ">
+                        <div className="col-md-2 ">
 
 
-                            <div className="footer-menu-container">
+                            <div className="footer-menu-container text-left">
                                 <ul>
                                     <h4 >
                                         Quick Links
@@ -43,24 +43,29 @@ const Footer = () => {
                                     </h4>
                                     <li className="footer-menu">
                                         <Link to="/home" className="footer-menu text-decoration-none">
-                                            Home
+                                            Contact us
                                         </Link>
                                     </li>
 
 
                                     <li className="footer-menu">
                                         <Link to="/about" className="footer-menu text-decoration-none">
-                                            About us
+                                          Help and Advise 
                                         </Link>
                                     </li>
                                     <li className="footer-menu">
                                         <Link to="/contact" className="footer-menu text-decoration-none">
-                                            Contact us
+                                        Shipping and Returns
                                         </Link>
                                     </li>
                                     <li className="footer-menu">
                                         <Link to="/exploreProducts" className="footer-menu text-decoration-none">
-                                            Explore
+                                           Terms and Conditions
+                                        </Link>
+                                    </li>
+                                    <li className="footer-menu">
+                                        <Link to="/exploreProducts" className="footer-menu text-decoration-none">
+                                          Refund Policy
                                         </Link>
                                     </li>
 
@@ -68,10 +73,13 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
+                        <div className='col-md-2'>
+
+                        </div>
                         <div className="col-md-4">
 
                             <div className=" text-start">
-                                <h3 className="font-mono text-3xl text-white  flex ">SPARKLE<img className=" w-4/12" src="https://i.ibb.co/6sM8wVN/logo.png" alt="" /> </h3>
+                                <h3 className="font-serif text-xl md:text-4xl text-white md:ml-16 flex "><img className=" w-2/12" src="https://i.ibb.co/6sM8wVN/logo.png" alt="" /> SPARKLE </h3>
                                 <p>Our company provides goods of premium quality and at
 
                                     fair prices. We are sure that these options are the secret
@@ -119,9 +127,12 @@ const Footer = () => {
                             </div>
 
                         </div>
+                        <div className='col-md-1'>
+
+                        </div>
 
                         {/* contact */}
-                        <div className="col-md-4">
+                        <div className="col-md-3">
                             <div className=" text-justify">
                                 <h3>Contact Us</h3>
 

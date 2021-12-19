@@ -5,7 +5,7 @@ import './Work.css'
 
 const Works = () => {
     return (
-        <div className=" bg-gray-100 container-fluid full-width mt-3">
+        <div className=" bg-gray-100 container-fluid full-width mt-3 overflow-hidden">
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 font-mono">
                 <div data-aos="flip-right"

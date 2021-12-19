@@ -3,7 +3,7 @@ import React from 'react';
 const VideoSectionPage = () => {
     return (
         <div>
-            <div style={{}} className="grid grid-cols-3 gap-2 my-2" >
+            <div style={{}} className="grid grid-cols-3 gap-2 my-2 overflow-hidden" >
 
                 <div style={{ width: "100%", height: "0px", position: "relative", paddingBottom: "131.743%" }} data-aos="fade-right"
                     data-aos-easing="linear"
